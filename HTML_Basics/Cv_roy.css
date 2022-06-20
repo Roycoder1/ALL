@@ -1,0 +1,51 @@
+h1
+{
+	text-align: center;
+}
+header
+{
+	display: flex;
+	justify-content: center;
+	font-size: 1.5em;
+}
+.photo_CV img
+{
+position: absolute;
+text-align: right;
+top: 10px;
+right: 10px;
+
+
+}
+body
+{
+	background-image: url('as.jog.jpeg');
+	margin-top: 70px;
+	border-left: 30px solid black;
+	text-align: center;
+}
+.structure_page
+{
+	font-size: 1.1em;
+	font-family: Times New Roman;
+}
+article
+{
+	display: flex;
+}
+h2
+{
+	text-align: center;
+}
+.Mon_expérience ul 
+{
+	list-style-type: none;
+}
+.Mes_competences ul
+{
+	list-style-type: none;
+}
+.Ma_formation ul
+{
+	list-style-type: none;
+}

@@ -1,0 +1,64 @@
+.banner
+{
+	width: 99%;
+	height: 420px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("https://thumbs.dreamstime.com/b/fond-d-eau-propre-vagues-de-calme-banni%C3%A8re-panorama-50458678.jpg");
+}
+
+body
+{
+	width: 99%;
+}
+.header
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.sign_in
+{
+	background-color: skyblue;
+	width: 100px;
+	height: 35px;
+}
+.texthome
+{
+	color: white;
+	flex-wrap: wrap;
+}
+.sign_up
+{
+	background-color: skyblue;
+	width: 100px;
+	height: 35px;
+}
+.article
+{
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	margin-top: 30px;
+	flex-wrap: wrap;
+}
+.pic1 i
+{
+	font-size: 43px;
+	color: violet;
+}
+.pic2 i
+{
+	font-size: 43px;
+	color: violet;
+}
+.pic3 i 
+{
+	font-size: 43px;
+	color: violet;	
+}
+
+
+

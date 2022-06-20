@@ -1,0 +1,54 @@
+nav 
+{
+	background-color: black;
+	color: white;
+	height: 60px;
+	width: 99%;
+	
+}
+.nav ul 
+{
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.3em;
+	margin-left: 670px;
+	font-family: Calibri;
+	align-items: center;
+}
+.banner
+{
+	background-image: url(thor.jpg);
+	width: 99%;
+	height: 500px;
+	background-size: cover;
+}
+.article
+{
+	position: relative ;
+	bottom: 380px;
+	flex-wrap: wrap;
+	width: 550px;
+
+}
+h1
+{
+	font-size: 4.7em;
+	font-weight: bold;
+	height: 70px;
+	width: 800px;
+}
+
+.photo
+{
+	position: relative;
+	bottom: 46px;
+	left: 1px;
+}
+nav ul li a
+{
+	text-decoration: none;
+	color: white;
+	align-items: center;
+
+}

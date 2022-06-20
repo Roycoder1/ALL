@@ -1,0 +1,21 @@
+body
+{
+	text-align: center;
+	background-color: #F5F5DC;
+}
+ul
+{
+	list-style-type: none;
+	font-style: italic;
+}
+body, h1
+{
+	border-style: dotted;
+
+}
+h1
+{
+	font-size: 250%;
+	font-style: italic;
+	font-weight: bold;
+}

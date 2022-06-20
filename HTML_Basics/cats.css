@@ -1,0 +1,62 @@
+tr,td,th
+{
+	border-collapse:collapse;
+	border: 1px solid black;
+	font-size: 1.2em;
+}
+body
+{
+	
+	width: 99%;
+	
+}
+.comp
+{
+	font-weight: bold;
+}
+.underline{
+	background-color: yellow;
+}
+table
+{
+	display: flex;
+	justify-content: center;
+}
+.media{
+	text-align: center;
+	display: inline-block;
+	margin-left: 30%;
+	margin-top: 30px;
+
+}
+.mediatitle{
+	text-align: center;
+}
+.media2
+{
+	border: 2px solid red ;
+	display: flex;
+	justify-content: center;
+}
+.differences
+{
+	color: red;
+	border: 1px solid red;
+	text-align: center;
+}
+.lion{
+	
+	border: 2px solid orange;
+}
+.lion1
+{
+	margin-left: 30%;
+	margin-top: 30px;
+
+}
+.cat
+{
+	margin-left: 40px;
+}
+
+
