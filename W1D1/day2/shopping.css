@@ -1,0 +1,80 @@
+
+body
+{
+	width: 99%;
+	text-align: center;
+	background-image: url(wall.jpg);
+	
+}
+
+
+nav
+{
+	background-color: black;
+	font-family: Calibri;
+	height: 50px;
+	justify-content: space-around;
+	color: white;
+	align-items: center;
+	padding-right: 40px;
+
+	
+}
+.nav ul
+{
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding-top: 15px;
+
+}
+.nav ul li 
+{
+
+	justify-content: space-between;
+
+}
+a
+{
+	color: white;
+	text-decoration: none;
+}
+.icon1
+{
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900;
+	font-size: 53px;
+	color: white;
+	position: relative;
+	bottom: 52px;
+	right: 681px
+
+	;
+}
+.all, .all1
+{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+.price1,.price2,.price3,.price4,.price5,.price6,.price7,.price8
+{
+	font-size: 1.2em;
+	color: #006600;
+	font-weight: bold;
+}
+.price1_last,.price2_last,.price3_last,.price4_last,.price5_last,.price6_last,.price7_last,.price8_last
+{
+	text-decoration: line-through;
+}
+.banner
+{
+	background-size: cover;
+}
+h3
+{
+	color: darkred;
+	font-weight: bold;
+	font-size: 1.3em;
+}
