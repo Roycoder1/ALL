@@ -48,7 +48,62 @@ h1
 nav ul li a
 {
 	text-decoration: none;
-	color: white;
 	align-items: center;
 
+}
+@media (min-width: 768px)
+{
+	h1
+	{
+		font-size: 25px;
+	}
+	nav 
+	{
+		background-color: lightgreen;
+		
+	}
+	li a{
+		color: black;
+	}
+}
+@media(max-width: 767px)
+{
+	h1
+	{
+		font-size: 35px;
+	}
+	nav 
+	{
+		background-color: yellow;
+		
+	}
+	li a{
+		color: black;
+	}
+}
+@media (min-width: 992px)
+{
+	nav 
+	{
+		background-color: red;
+	}
+	li a{
+		color: white;
+	}
+	h1
+	{
+		position: relative;
+		top: 85px;
+		left: 578px;
+	}
+}
+@media (min-width: 1200px)
+{
+	nav 
+	{
+		background-color: black;
+	}
+	li a{
+		color: white;
+	}
 }

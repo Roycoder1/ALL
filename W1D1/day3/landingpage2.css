@@ -1,0 +1,104 @@
+body
+{
+	width: 100%;
+	text-align: center;
+	background-image: url(map1.jpg);
+	background-size: cover;
+}
+header
+{
+	margin-bottom: 50px;
+}
+.number
+{
+	color: blue;
+	font-weight: bold;
+	font-size: 2em;
+}
+.datas
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 180px;
+
+}
+.outer-box
+{
+	display: flex;
+	justify-content: space-around;
+	height: 200px;
+	
+}
+.inner-box
+{
+	box-shadow: 2px 2px 2px 2px black
+}
+.box2
+{
+	position: relative;
+	top: 102px;
+	margin-right: 40px;
+
+}
+.box1
+{
+	margin-right: 40px;
+
+}
+.box3
+{
+	margin-right: 15px;
+}
+.container
+{
+	height: 116px;
+	background-color: #ff9999;
+	color: white;
+	background-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.image1
+{
+	position: absolute;
+	top: 384px;
+	left: 234px;
+}
+.b1,.b2,.b3
+{
+	padding-bottom: 17px;
+}
+.container2
+{
+	height: 116px;
+	background-color: royalblue;
+	color: white;
+	background-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.container3
+{
+	height: 116px;
+	background-color: #66ff99;
+	color: white;
+	background-size: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.image2
+{
+	position: absolute;
+	top: 62px;
+	left: 205px;
+}
+.image3
+{
+	position: absolute;
+	top: 384px;
+	left: 1225px;
+}

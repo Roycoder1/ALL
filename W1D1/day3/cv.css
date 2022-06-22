@@ -1,0 +1,72 @@
+body
+{
+	width: 99%;
+	background-color: whitesmoke;
+}
+.photo_cv
+{
+	width: 116px;
+	border-bottom: 3px solid orange;
+}
+.structure_page
+{
+	border-bottom: 4px solid orange;
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+
+}
+.head
+{
+	padding-left: 40%;
+}
+h2
+{
+	text-align: center;
+}
+/*for the top contact and formation*/
+.top
+{
+	display: flex;
+}
+.contact,.skills
+{
+	width: 40%;
+	
+}
+.contact1
+{
+	padding-left: 27px;
+}
+.ma_formation,.mon_expérience
+{
+	width: 60%;	
+}
+article
+{
+	font-size: 19px;
+}
+.mail,.number,.adress,.linkedin
+{
+	display: flex;
+}
+.mail div,.number div,.adress div,.linkedin div
+{
+	margin-left: 10px;
+}
+
+/*for the bottom experiences and skills*/
+.bottom{
+	display: flex;
+}
+.vertical-line
+{
+	border-left: 4px solid orange;
+	height: 530px;
+	position: absolute;
+	/* margin: 0 20px; */
+	left: 511px;
+}

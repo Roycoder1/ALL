@@ -1,0 +1,40 @@
+.all
+{
+	display: flex;
+}
+
+
+
+
+.inner-box
+{
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+	/* display: flex; */
+	margin: 10px;;
+	
+
+}
+.group1
+{
+	display: flex;
+	flex-direction: column;
+
+}
+.group2
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+.group3
+{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+

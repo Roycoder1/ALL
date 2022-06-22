@@ -1,0 +1,31 @@
+.outer-div
+{
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	/*center*/
+	justify-content:space-between;
+	align-items: center;
+}
+.inner-div
+{
+	border: 1px solid #000;
+	padding: 30px;
+	text-align: center;
+	width: 100px;
+	height: 100px;
+
+}
+.bg1
+{
+	background-color: #ff4797;
+}
+.bg2
+{
+	background-color: #f3ff47;
+}
+.bg3
+{
+	background-color: violet;
+}

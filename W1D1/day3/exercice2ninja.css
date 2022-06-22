@@ -1,0 +1,25 @@
+.all
+{
+	display: grid;
+	grid-template-columns: repeat(16, 1fr);
+	grid-template-rows: repeat(16, 1fr);
+	grid-gap: 3px;
+	
+
+
+}
+.container1
+{
+	
+	background-color: orange;
+}
+.container2
+{
+	
+	background-color: beige;
+}
+.container3
+{
+	
+	background-color: orangered;
+}
