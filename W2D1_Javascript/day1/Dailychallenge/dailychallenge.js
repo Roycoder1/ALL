@@ -2,7 +2,10 @@
 // Exercise 1:
 
 let fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
-fruits.shift();
+let indexOfBanana = fruits.indexOf("Banana");
+console.log(indexOfBanana);
+fruits.splice(indexOfBanana,1);
+// fruits.shift();
 let b = fruits.sort();
 console.log(b);
 fruits.push("kiwi");
