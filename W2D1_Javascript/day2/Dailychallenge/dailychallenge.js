@@ -3,9 +3,9 @@ let sentence ="The movie is not that bad, I like it";
 let sentence1= prompt("Do a sentence with the word not and bad","The movie is not that bad, I like it")
 
 
-let wordNot = sentence.indexOf("not");
+let wordNot = sentence1.indexOf("not");
 
-let wordBad = sentence.indexOf("bad");
+let wordBad = sentence1.indexOf("bad");
 
 
 let sentence2= sentence1.substring(0 ,wordNot-1);
@@ -19,8 +19,8 @@ console.log(wordNot);
 console.log(wordBad);
 
 if (wordBad>wordNot) {
-	console.log(`${sentence2} ${var1} ${sentence3}`)
+	console.log(`${sentence2} ${var1} ${sentence3}`);
 }
-else if (wordBad<wordNot){
-	console.log(sentence)
+else {
+	console.log(sentence1);
 }
