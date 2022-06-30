@@ -129,103 +129,118 @@
 // Exercise6 :
 
 let hotelCost= (hotel)=>{
-	let ask = prompt("How much night would you like to stay in the hotel?")
-	let numb= Number(ask);
+	// let ask = prompt("How much night would you like to stay in the hotel?")
+	// let numb= Number(ask);
 	let sum = 0
-	console.log(typeof(ask));
-	if (typeof(numb)=='number') {
-		for(i=0; i<numb; i++)
+	// console.log(typeof(ask));
+	// if (!isNaN(numb)) {
+	// 	for(i=0; i<numb; i++)
 
-			console.log(hotel);
-		let total = sum+numb*hotel;
-		console.log(total);
+	// 		console.log(hotel);
+	// 	let total = sum+numb*hotel;
+	// 	console.log(total);
 
-	}
-	else{
-		while(typeof(ask)!=='number');
-		ask = prompt("How much night would you like to stay in the hotel?")
-		return ask
-	}
+	// }
+	// else{
+		do{
+
+			ask = prompt("How much night would you like to stay in the hotel?")
+			numb= Number(ask);
+			sum = 0
+			console.log(typeof(ask));
+			if (!isNaN(numb)) {
+				for(i=0; i<numb; i++)
+
+					console.log(hotel);
+				let total = sum+numb*hotel;
+				console.log(total);
+
+			}
+
+
+		}
+		while(isNaN(numb))
+	// }
 }
 hotelCost(140)
 
 // 2.
 
-let planeRideCost = ()=>{
-	let user = prompt('enter a destination','Dubai');
-	let numb= Number(user);
+// let planeRideCost = ()=>{
+// 	let user = prompt('enter a destination','Dubai');
+// 	let numb= Number(user);
 
-	let destination = {
-		London : 183+'$',
-		Paris : 220+'$',
-		All_other_destination: 300+'$',
-	}
-	let obj = Object.keys(destination);
+// 	let destination = {
+// 		London : 183+'$',
+// 		Paris : 220+'$',
+// 		All_other_destination: 300+'$',
+// 	}
+// 	let obj = Object.keys(destination);
+
+
+
+// 	if (user ==obj[0]) {
+// 		console.log(`London : ${destination.London}`)
+// 	}
+
+// 	else if (user==obj[1]) {
+// 		console.log(`Paris : ${destination.Paris}`)
+// 	}
+// 	else
+// 	{
+// 		console.log(`Autre destination : ${destination.All_other_destination}`)
+// 	}
+// }
+// planeRideCost()
+
+// // Exercise 3 :
+
+// let rentalCarCost = (rentCar)=>{
+// 	let car = prompt('How much time would you like to rent the car?');
+// 	let numb = Number(car);
+// 	let sum1 = 0;
+// 	let total = sum1+numb*rentCar;
+// 	console.log(total);
+// 	if (numb>10) {
+// 		let discount = total * 0.95;
+// 		console.log(discount);
+// 	}
+
+
+// }
+
+
+
+// rentalCarCost(40);
+
+
+
+
+// let ask = prompt("How much night would you like to stay in the hotel?")
+// let numb= Number(ask);
+// let sum = 0
+// let total = sum+numb*140;
+// let user = prompt('enter a destination','Dubai');
+// let numb2= Number(user);
+// let car = prompt('How much time would you like to rent the car?');
+// let numb1 = Number(car);
+// let sum1 = 0;
+// let total1 = sum1+numb1*40;
+// let discount = total1 * 0.95;
+
+// let destination = {
+// 	London : 183+'$',
+// 	Paris : 220+'$',
+// 	All_other_destination: 300+'$',
+// }
+
+
+// let totalVacationCost = (hotelCost,planeRideCost,rentalCarCost)=>{
+
 	
 
-
-	if (user ==obj[0]) {
-		console.log(`London : ${destination.London}`)
-	}
-
-	else if (user==obj[1]) {
-		console.log(`Paris : ${destination.Paris}`)
-	}
-	else
-	{
-		console.log(`Autre destination : ${destination.All_other_destination}`)
-	}
-}
-planeRideCost()
-
-// Exercise 3 :
-
-let rentalCarCost = (rentCar)=>{
-	let car = prompt('How much time would you like to rent the car?');
-	let numb = Number(car);
-	let sum1 = 0;
-	let total = sum1+numb*rentCar;
-	console.log(total);
-	if (numb>10) {
-		let discount = total * 0.95;
-		console.log(discount);
-	}
-
-
-}
-
-
-
-rentalCarCost(40);
-
-
-
-
-let ask = prompt("How much night would you like to stay in the hotel?")
-let numb= Number(ask);
-let sum = 0
-let total = sum+numb*140;
-let user = prompt('enter a destination','Dubai');
-let numb2= Number(user);
-let car = prompt('How much time would you like to rent the car?');
-let numb1 = Number(car);
-let sum1 = 0;
-let total1 = sum1+numb1*40;
-let discount = total1 * 0.95;
-
-let destination = {
-	London : 183+'$',
-	Paris : 220+'$',
-	All_other_destination: 300+'$',
-}
-
-
-let totalVacationCost = (hotelCost,planeRideCost,rentalCarCost)=>{
-
-	
-
-	console.log(`The car cost ${hotelCost}the hotel cost${planeRideCost}the plane tickets cost ${rentalCarCost}`);
-}
-totalVacationCost(total1,total,destination.All_other_destination)
+// 	console.log(`The car cost ${hotelCost}the hotel cost${planeRideCost}the plane tickets cost ${rentalCarCost}`);
+// }
+// totalVacationCost(total1,total,destination.All_other_destination)
 
 
