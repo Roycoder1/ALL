@@ -78,15 +78,12 @@
 // let navbar = document.getElementById('navBar')
 // navbar.setAttribute('id','socialNetworkNavigation')
 
-
+// const nav = document.getElementsByClassName('socialNetworkNavigation')[0];
 // let litag = document.createElement('li')
-// litag.innerText = 'Deconnexion';
+// litag.innerText = 'Logout';
 // document.body.appendChild(litag)
-
-// let node = document.getElementsByTagName("li");
-// console.log(node)
-// document.body.appendChild(litag)
-// litag.appendChild(litag)
+// let node = document.getElementsByTagName("a")[0];
+// node.appendChild(litag)
 
 
 // Exercise 4 :
@@ -112,13 +109,20 @@
 // La largeur de l'image doit être définie sur 100px.
 // Si le livre est déjà lu. Définissez la couleur des détails du livre sur rouge.
 let img = document.createElement("img");
-let img2 = document.createElement("img");
 img.src = "https://www.babelio.com/couv/bm_CVT_Bel-Ami_5950.jpg" ;
-img.src = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4549/9781454911869.jpg";
-let src = document.getElementsByClassName("listBooks");
-let src2 = document.getElementsByClassName("listBooks");
+let src = document.getElementsByClassName("listBooks")[0];
 src.appendChild(img);
+
+let element2= document.createElement('div');
+let img2 = document.createElement("img");
+element2.classList.add('img2');
+img.src = "https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/4549/9781454911869.jpg";
+let src2 = document.getElementsByClassName("listBooks")[0];
 src2.appendChild(img);
+
+
+let allBooks
+
 allBooks = {
 	
 	Title : 'Bel-ami',
@@ -133,7 +137,11 @@ allBooks = {
 	alreadyRead: true,	
 }
 
-
+let book = document.getElementsByClassName("listBooks")[0];
+let element1= document.createElement('p');
+element1.innerText = 'Title : Bel-ami\nAuthor: Guy de Maupassant\nalreadyRead: true'
+element1.style.marginLeft= '60px'
+book.appendChild(element1);
 
 
 
