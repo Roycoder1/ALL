@@ -58,7 +58,7 @@
 
 
 
-// if (blue==div.style.background=='lightblue') {
+// if (blue.style.background=='lightblue') {
 // 	alert('Hello John and Pete')
 
 // }
