@@ -4,21 +4,26 @@ function getValue(){
 
 	let text = document.querySelector('input').value;
 	console.log(text);
+	let input= document.querySelector('input')
 	
 
-	let regex = '/^[A-Za-z0-9 ]+$/';
+	let regex = /[^a-zA-Z0-9]/g
+	let isValid =regex.test(text);
 
-	if (text.test(regex)== regex) {
+
+	if (!isValid) {
 
 		return true;
 	}
 	else{
-		return false ; 
+		text = text.replace(/[^a-zA-Z0-9]/g, '')
 	}
-
-
-
+	console.log('false')
 }
+
+
+
+
 
 
 // var name = name.replace(/[^a-zA-Z0-9 ]/g, "");
