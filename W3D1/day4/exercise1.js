@@ -8,6 +8,13 @@ let main_count = main_col * main_row;
 let color;
 let row;
 let clear_ = document.getElementById('clear_')
+let mouseDown ;
+document.body.addEventListener('mousedown', function(){
+	mouseDown= true
+})
+document.body.addEventListener('mouseup', function(){
+	mouseDown= false
+})
 
 
 let sidebar = document.getElementById('sidebar');
@@ -31,7 +38,13 @@ for (var i = 0; i < main_count; i++) {
 	main.appendChild(div);
 
 	div.addEventListener('mouseover', function(){
-		div.style.backgroundColor = color;
+		
+
+		if (mouseDown) {
+			div.style.backgroundColor = color;
+		}
+
+
 		clear_.addEventListener('click', function(){
 			div.style.backgroundColor = 'darkgrey';
 		})
