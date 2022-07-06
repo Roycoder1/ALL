@@ -5,20 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Form</title>
 	<link rel="stylesheet" type="text/css" href="daily.css">
+	<script src="https://kit.fontawesome.com/6a08cdc35c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<h1>TO DO LIST</h1>
+	<div class="all">
+		<div class="first">
+			<h1>TO DO LIST</h1>
+		</div>
+		<div class="form1">
+			<form onsubmit="return false">
 
-	<form method="get">
-
-		<input type="text" name="user">
-		<button class="submit">Submit</button>
+				<input type="text" name="user"  placeholder="new task" >
+				<button class="submit" onclick="getValue()">ADD</button>
 
 
-	</form>
-
-	<div class="listTasks"></div>
-
+			</form>
+		</div>
+		<div class="last">
+			<div class="listTasks"><i class="fa-solid fa-x"></i></div>
+		</div>
+	</div>
 
 	<script src="daily.js"></script>
 
