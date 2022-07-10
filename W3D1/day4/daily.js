@@ -1,10 +1,9 @@
 let listTasks = []
 
-function getValue(){
-
-
-	let input = document.querySelector('input')
-	input.value
+function getValue(event){
+	event.preventDefault()
+	console.log('jjjjj')
+	let input = document.querySelector('input');
 	console.log(input.value)
 
 
@@ -22,7 +21,7 @@ function getValue(){
 		
 		let lists = document.querySelector('.listTasks')
 		
-		let text = listTasks.toString()
+		// let text = listTasks.toString()
 		
 
 
@@ -32,7 +31,7 @@ function getValue(){
 		let create = document.createElement('input');
 		create.setAttribute('type', 'checkbox')
 		// create.classList ='fa-solid fa-x';
-		createDiv.innerText = ' X  '+ text
+		createDiv.innerText = ' X  '+ input
 		console.log(createDiv)
 		lists.appendChild(createDiv)
 		lists.appendChild(create)
@@ -40,8 +39,6 @@ function getValue(){
 
 	}
 }
-
-getValue()
 
 
 
