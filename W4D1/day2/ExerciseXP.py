@@ -176,6 +176,36 @@
 
      # Exercise 10 :
 
-sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
-finished_sandwiches=[]
+# sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
+# finished_sandwiches=[]
+# for i in enumerate(sandwich_orders):
+#      indexValue1 = i
+#      print (i)
+#      indexValue1 =list([i])
+#      finished_sandwiches.append(indexValue1)
+#      print(finished_sandwiches)
+#      print(f'I made your {finished_sandwiches[0][0]}')
 
+     # Exercise 11 :
+from os import remove
+
+
+sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
+concat = "pastrami sandwich","pastrami sandwich","pastrami sandwich"
+list1 = list(concat)
+final_list=sandwich_orders+list1
+
+print('Merged List:', final_list)
+print('Merged List:', final_list)
+
+
+
+print('The deli has run out of pastrami')
+while True :
+     if "pastrami sandwich" in final_list :
+          remove("pastrami sandwich")
+          break
+     else:
+          print('sucess')
+          break
+  
