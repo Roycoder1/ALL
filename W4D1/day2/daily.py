@@ -13,7 +13,5 @@ for x in range(1,lenght+1):
 user = input ("Gimme a string")
 
 string = list(dict.fromkeys(user))
-final = ''
-string[0:100] = [''.join(string[0:1000])]
-str(string)
-print (string)
+string1 = ''.join(string)
+print (string1)
