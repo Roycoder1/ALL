@@ -24,12 +24,7 @@ string1=string.replace("$", "")
 string1 = string1.replace("#", "")
 string1 = string1.replace("%", "")
 string1 = string1.replace("!", "")
-string1 = string1.replace ("7","")
-string1 = string1.replace ("3","")#NO NEED
-# print(string1)
-# for i in int(string1):
-#     print(string1[i])
-
-print(f'{string1[9]}{string1[16]}{string1[22]}{string[29]} {string[3]}{string[10]}  {string[30]}{string1[33]}{string1[44]}{string1[17]}')
+print(string1)
+print(f'{string1[9]}{string1[16]}{string1[22]}{string[29]} {string[3]}{string[10]}  {string[30]}{string1[33]}{string1[44]}{string1[11]}{string1[17]}')
 
 
