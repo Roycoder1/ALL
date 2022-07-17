@@ -176,16 +176,16 @@ def handle_turn(player):
  
         
 display_board()
+def check_if_win():
+     if moves[6]== "X" or "Y":
+          return
+def check_if_tie():
+    return
 
 def check_if_game_over():
     check_if_win()
     check_if_tie()
-
-def check_if_win():
-     return
-
-def check_if_tie():
-    return
+check_if_game_over()
 
 def flip_player():
     return
