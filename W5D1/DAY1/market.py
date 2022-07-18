@@ -3,11 +3,12 @@ class Farm (): #the farm class should be implemented with class and the name Far
     def __init__(self,farmName) -> None:#__init__ method is necessary for defining the name of the farm 
         self.farmName = farmName
         print(f"{self.farmName}'s farm")
+        self.animals1 = {}
         
     def add_animal(self,name,age):#Needs only add_animal method and get_info method
         self.name=name
         self.age= age
-        
+        self.list = []
         print(f"{self.name}: {self.age}")
         
     
@@ -28,6 +29,8 @@ class Farm (): #the farm class should be implemented with class and the name Far
         name3 = "goat"
         listFarms = [name1,name2,name3]
         listFarms = sorted(listFarms)
+        
+
         print(f"McDonald’s farm has{name1} {name2} and {name3} ")
 
 
