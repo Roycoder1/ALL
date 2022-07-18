@@ -1,0 +1,55 @@
+class Pagination():
+    def __init__(self,items = [],pageSize=10) -> None:
+        self.items = items
+        self.pageSize  = pageSize
+    def getVisibleItems(self):
+        list =[]
+        list2 =[]
+        list3 = []
+        list4 = []
+        list5 = []
+        list6 = []
+        list7 = []
+        # print(self.items[0][0])
+        for i in self.items[0][0:self.pageSize]:
+            list.append(i)
+        print(f"Page1:{list}")
+        for i in self.items[0][4:8]:
+            list2.append(i)
+        print(f"Page2:{list2}")
+        for i in self.items[0][8:12]:
+            list3.append(i)
+        print(f"Page3:{list3}")
+        for i in self.items[0][12:16]:
+            list4.append(i)
+        print(f"Page4:{list4}")
+        for i in self.items[0][16:20]:
+            list5.append(i)
+        print(f"Page5:{list5}")
+        for i in self.items[0][20:24]:
+            list6.append(i)
+        print(f"Page6:{list6}")
+        for i in self.items[0][24:26]:
+            list7.append(i)
+        print(f"Last Page:{list7}")
+
+    def prevPage(self):
+        pass
+    def nextPage(self):
+       pass
+
+    def firstPage(self):
+        pass
+    def lastPage(self):
+        pass
+    def goToPage(self):
+        pass
+
+
+alphabetList = "abcdefghijklmnopqrstuvwxyz".split(',')
+p = Pagination(alphabetList, 4)
+p.getVisibleItems()
+p.nextPage()
+p.getVisibleItems
+p.lastPage()
+p.getVisibleItems
