@@ -21,13 +21,12 @@ class Family ():
         list.append(self.members) 
         print(list)
     
-    def is_18(self,last_name):
-        self.last_name = last_name
-        # print(self.members[1])
-        # if self.members[1] >=18:
-        #     return True
-        # else:
-        #     return False
+    # def is_18(self,last_name):
+    #     self.last_name = last_name
+    #     if self.age >=18:
+    #         return True
+    #     else:
+    #         return False
     
     def family_presentation(self):
         pass
@@ -51,9 +50,15 @@ class TheIncredibles(Family):
         
 
 
+list = []
+list2 = []
+family = Family("Miller",[{"name" :"Michael","age":35,"gender":"Male","is_child": False}])
+sarah = Family("Miller",[{"name" :"Sarah","age":32,"gender":"Female","is_child": False}])
+list.append(family)
+list2.append(sarah)
+list+=list2
+print(list[0].members,list[1].members)
 
-family = Family("Miller",{name :"Michael","age":35,"gender":"Male","is_child": False})
-sarah = Family("Miller",{name :"Sarah","age":32,"gender":"Female","is_child": False})
-family.born("Miller",{name :"BabyShark","age":1,"gender":"Female","is_child": True})
-family.is_18("Miller")
-incredibles = TheIncredibles("Miller",{name :"Sarah","age":32,"gender":"Female","is_child": False,"power":"fly","incredible_name":"MikeFly"})
+family.born("Miller",{"name" :"BabyShark","age":1,"gender":"Female","is_child": True})
+# family.is_18("Miller")
+incredibles = TheIncredibles("Miller",{"name" :"Sarah","age":32,"gender":"Female","is_child": False,"power":"fly","incredible_name":"Mike"})
