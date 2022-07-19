@@ -4,18 +4,19 @@ class Farm (): #the farm class should be implemented with class and the name Far
         self.farmName = farmName
         print(f"{self.farmName}'s farm")
         self.animals1 = {}
-        
+        # In the add_animal function you should be adding the animals to the self.animals1 object that is part of the class
+        # instead you are just creating new variables for the class farm that is not asked.
     def add_animal(self,name,age):#Needs only add_animal method and get_info method
         self.name=name
         self.age= age
         self.list = []
         print(f"{self.name}: {self.age}")
         
-    
+    # then when calling the get info method you should display the info into the animals1 object and not hardcode the information as you did.
     def get_info(self):
         print("E-I-E-I-0")
     def get_animal_types(self):
-       
+    
         name1 = "cow"
         name2 = "sheep"
         name3 = "goat"
@@ -34,7 +35,7 @@ class Farm (): #the farm class should be implemented with class and the name Far
         print(f"McDonald’s farm has{name1} {name2} and {name3} ")
 
 
-
+# every time you add an animal you are just ovewriting the animal variable of the class and not adding animals.
 macdonald = Farm("McDonald")
 macdonald.add_animal('cow',5)
 macdonald.add_animal('sheep',2)#It should have 2 elements otherwise it will be an error
@@ -45,3 +46,4 @@ macdonald.get_short_info()
 
 # eXPAND THE Farm
 
+# REDO the exercise.
