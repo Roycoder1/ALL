@@ -9,4 +9,3 @@ def number (number1,number2):
     return (number1)
 
 sum2 = number(19,34)
-print()
