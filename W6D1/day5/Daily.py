@@ -30,14 +30,20 @@ cursor = connection.cursor()
 # cursor.close()
 
 nameapi = requests.get("https://restcountries.com/v3.1/name/united")
-
+print (type(nameapi.text))
 json1= json.loads(nameapi.text)
+print (json1)
+print (type(json1))
+common = json1[0]["name"]['common']
+print (common)
+# capital = json[0]['name']['capital']
 
 
 
 # print(nameapi.text)
 
-name = f'INSERT INTO COUNTRY (name,capital,flag,subregion,population) VALUES  '(())
+name = f'INSERT INTO COUNTRY (name) VALUES ("{common}");'
 
-
+cursor.execute(name)
+connection.commit()
 # print (response.text)
