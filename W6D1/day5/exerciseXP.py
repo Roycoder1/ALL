@@ -41,7 +41,12 @@ class MenuItem():
         cursor = connection.cursor()
         cursor.execute(query)
         connection.commit()
-        connection.close()
+        try:
+            results = cursor.fetchall()
+            connection.close()
+            return results
+        except:
+            connection.close()
         
         
     def save(self):
@@ -72,27 +77,34 @@ class MenuItem():
         self.new_item = new_item
         self.new_price = new_price
         try:
-            update_item = f" UPDATE menu_item SET item = '{self.new_item}' where id= 3 "
+            update_item = f" UPDATE menu_item SET item = '{self.new_item}' where item= {self.item} "
             self.runquery(update_item)
         except:
             return False
         
 
     def all(self):
-        all = f'Select * from menu_item'
-        return self.runquery(all)
+        try:
+            all = f"SELECT * FROM menu_item"
+            MenuItem.runquery(self,all)
+            print (MenuItem.runquery(self,all))
+        except:
+            return False
+
     def get_by_name(self):
         
-        choice = input ('Choose an item')
-        user= f" select * from menu_item where item = ' {choice}'"
-        self.runquery(user)
-
-
-
-
+        choice = input ('Choose an item ')
+        user= f"SELECT * FROM menu_item where item = '{choice}'"
+        res = MenuItem.runquery(self,user)
+        return res
+        # print (res)
+            
+        
+            
 item = MenuItem('burger', 35)
 item.save()
-# item.delete()
+item.delete()
 item.update('Veggie Burger', 37)
 item2 = MenuItem.get_by_name('Beef Stew')
-items = MenuItem.all()
+print(item2)
+items = item.all()
