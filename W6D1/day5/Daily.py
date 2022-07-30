@@ -35,15 +35,25 @@ json1= json.loads(nameapi.text)
 print (json1)
 print (type(json1))
 common = json1[0]["name"]['common']
-print (common)
-# capital = json[0]['name']['capital']
+# print (common)
+capital = json1[0]["capital"]
+print(capital)
+flag = json1[0]["flags"]
+print(flag)
+subregion = json1[0]["subregion"]
+print (subregion)
+region = json1[0]["region"]
+print (region)
+population = json1[0]["population"]
+print (population)
+
+
 
 
 
 # print(nameapi.text)
 
-name = f'INSERT INTO COUNTRY (name) VALUES ("{common}");'
+name = f'INSERT INTO COUNTRY (name , capital, flag, subregion, population) VALUES ({common},{capital},{flag},{subregion},{population})'
 
 cursor.execute(name)
 connection.commit()
-# print (response.text)
