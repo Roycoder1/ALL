@@ -53,7 +53,7 @@ print (population)
 
 # print(nameapi.text)
 
-name = f'INSERT INTO COUNTRY (name , capital, flag, subregion, population) VALUES ({common},{capital},{flag},{subregion},{population})'
+name = f'INSERT INTO COUNTRY (name , capital, flag, subregion, population) VALUES ("{common}","{capital}","{flag}","{subregion}","{population}")'
 
 cursor.execute(name)
 connection.commit()
