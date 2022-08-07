@@ -49,10 +49,15 @@
 # second[3]= second[0]+second[1]+second[2]
 # print (second)
 
-# with regular python:
 import random
-rd=random.randint(1,100)
-for i  in rd (10):
-    list = []
+
+list = []
+
+for i in range (10):
+    rd = random.randint(1,100)
+    
     list.append(rd)
-    print(list)
+
+print(list)
+
+

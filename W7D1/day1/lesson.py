@@ -11,3 +11,12 @@ def numpy1 ():
     return array
 
 numpy1()
+# with regular python:
+# import random
+
+# for i in range (10):
+#     rd=random.randint(1,100)
+#     list = []
+#     list.append(rd)
+#     print(list)
+

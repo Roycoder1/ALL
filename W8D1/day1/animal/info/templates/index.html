@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First page</title>
+</head>
+<body>
+    <h1> Hello</h1>
+
+    {% for animal in animal.animals %}
+
+        {{animal.name}}</br>
+    {%endfor%}
+    <h2>Few families</h2>
+    {% for family in animal.families %}
+        {{family.name}},</br>mammal ,</br> reptile,</br>insect,</br>arachnid,</br>amphibian
+    {%endfor%}
+    <h2>Few animals</h2>
+    {% for animal in animal.animals %}
+    {{animal.name}},
+    {%endfor%}
+    </br>,snake,</br>monkey,</br>gorilla
+    {%if family.id == animal.id %}
+        {{animal.name}}{{animal.legs}}{{animal.weight}}{{animal.height}}{{animal.speed}}{{animal.family}}
+    {%endif%}
+    
+</body>
+</html>
