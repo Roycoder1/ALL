@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+import json
 # Create your views here.
 def index(request):
     animals =  {
@@ -44,3 +44,22 @@ def index(request):
         ]
     }
     return render(request,'index.html', {'animal': animals ,'family': 'families'})
+
+# correction:
+
+# with open('info/data.json','r') as f :
+#     data = json.load(f)
+
+# animals = data['animals']
+# families = data [ 'families']
+
+# def show_family(request,id):
+#     family_selected = None
+
+#     for family in families:
+#         if family['id']==id :
+#             family_selected = family
+#     return render(request,'index.html',{'family':family_selected})
+
+# def animal(request):
+#     return render (request , '')
