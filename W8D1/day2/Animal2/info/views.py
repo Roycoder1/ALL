@@ -1,14 +1,11 @@
 from django.shortcuts import render
-from models import Family
-from models import Animal
+from .models import Family, Animal
 
 # Create your views here.
 def index(request):
-    x = Family.objects.get(id = id)
-    print (x)
-    if x == Animal.objects.get(id = id):
-        {Animal.legs,Animal.weight,Animal.height,Animal.speed,Animal.family}
-    return render(request,'index.html')
+    id = Family.objects.get(id = id)
+   
+    return render(request,'index.html',{'id':id})
 
 def animal(request):
 
