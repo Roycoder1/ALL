@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    {% block content %}
+        <h1>
+        
+            Hello {{user.first_name }} {{user.last_name}}
+        </h1>
+        <h2>Welcome to my website</h2> 
+    {% endblock content %}
+
+        {{form.as_p}} {# to render the form #}
+        <br>
+        <tr>
+            <th><label for="id_name">uploader_name:</label></th>
+            <td><input id="id_name" name="name" type="text" /></td>
+        </tr><br>
+        <tr>
+            <th><label for="id_email">title:</label></th>
+            <td><input id="id_email" required name="email" type="text" /></td><br>
+        </tr>
+        <tr>
+            <th><label for="id_comment">url:</label></th>
+            <td><input type="url" id="id_comment" required name="comment"></td><br>
+            Category:
+            <select id="id_field2" name="field2">
+                <option value="obj1.name">Category1</option><br>
+                <option value="obj2.name">Category2</option><br>
+                <option value="obj1.name">Category3</option><br>
+                <option value="obj2.name">Category4</option><br>
+                </select><br>
+        </tr>
+        <form action="get">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name"><br>
+        </form>
+
+    
+</body>
+</html>
