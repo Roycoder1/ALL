@@ -10,8 +10,7 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
 import os
 
 
-# export DJANGO_SETTINGS_MODULE=Animal2.settings
-# export DJANGO_SETTINGS_MODULE=Animal2.settings
+
 
 from django.core.wsgi import get_wsgi_application
 

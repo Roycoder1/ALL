@@ -1,0 +1,8 @@
+body{
+    background-image: url(/static/image1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    width: 99%;
+    color: white;
+}
