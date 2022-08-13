@@ -7,9 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Categories</p>
-    {% for category in categories %}
-    <br><br>
-    <a href="{{category.ab"></a>
+{%for rentals in rental%}
+    {{rentals.rental_date}} <br> {{rentals.return_date}} <br> {{rentals.customer}} <br>{{rentals.vehicle}}
+{%endfor%}
 </body>
 </html>

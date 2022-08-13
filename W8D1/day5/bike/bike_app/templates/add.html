@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Add</title>
 </head>
 <body>
-    <p>Categories</p>
-    {% for category in categories %}
-    <br><br>
-    <a href="{{category.ab"></a>
+    Add new category
+    {% csrf_token%}
+    {{form.as_p}}
+    <button type="submit">Submit</button>
 </body>
 </html>
