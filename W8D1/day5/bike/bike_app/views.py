@@ -87,3 +87,6 @@ def vehicle_add(request):
             Category.objects.create(vehicle_name=vehicle_name, cost=cost)
 
     return render(request, 'add_vehicle.html', context)
+
+
+

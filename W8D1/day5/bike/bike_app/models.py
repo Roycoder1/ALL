@@ -1,5 +1,6 @@
-from audioop import reverse
+
 from django.db import models
+from django.urls import reverse
 
 # Create your models here.
 class Customer(models.Model):
@@ -13,9 +14,15 @@ class Customer(models.Model):
 
 class Vehicle_type(models.Model):
     name = models.CharField(max_length=50)
+    def __str__(self) -> str:
+        return self.name
+
 
 class Vehicle_size(models.Model):
     name = models.CharField(max_length=50)
+    def __str__(self) -> str:
+        return self.name
+
 
 
 class Vehicle(models.Model):
@@ -24,7 +31,12 @@ class Vehicle(models.Model):
     real_cost = models.IntegerField()
     size = models.ForeignKey(Vehicle_size, on_delete=models.CASCADE, related_name='size')
     def __str__(self) -> str:
-        return f'{self.vehicle_type} to {self.size}'
+        return f'{self.vehicle_type}  {self.size}'
+
+    def get_absolute_url(self):
+        return reverse('vehicleNew', args=[self.id])
+
+
 
 class Rental(models.Model):
     rental_date= models.DateTimeField()
@@ -32,7 +44,7 @@ class Rental(models.Model):
     customer= models.ForeignKey(Customer,on_delete=models.CASCADE,related_name='customer')
     vehicle= models.ForeignKey(Vehicle, on_delete=models.CASCADE, related_name='vehicle')
     def __str__(self) -> str:
-        return f'{self.rental_date} to {self.return_date}'
+        return f'{self.rental_date}  {self.return_date}'
 
 
 class Rental_Rate(models.Model):

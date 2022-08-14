@@ -14,6 +14,7 @@ urlpatterns = [
     path('order', customer_order, name = 'order'),
     path('vehicle', vehicle , name='vehicle' ),
     path('vehicle_id',vehicle_id,name = 'vehicle_id'),
-    path('add_vehicle',vehicle_add,name = 'add_vehicle')
+    path('add_vehicle',vehicle_add,name = 'add_vehicle'),
+    
 
 ]
