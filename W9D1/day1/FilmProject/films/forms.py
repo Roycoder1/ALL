@@ -6,7 +6,7 @@ from django import forms
 class AddFilmForm(forms.ModelForm):
     class Meta:
         model = Film
-        fields = ['title','release_date']
+        fields = '__all__'
         widgets = {
 
             'release_date': forms.DateInput(attrs={'type' : 'date'})

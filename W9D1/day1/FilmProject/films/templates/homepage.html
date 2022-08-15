@@ -1,7 +1,18 @@
 
 {%extends 'partials/base.html'%}
 
-
+<br>
 {%block content%}
-
+{%for film in films%}
+<div>
+Title: {{film.title}}
+</div>
+{% for cat in film.cayegories.all%}
+{{cat}}
+{%endfor%}
+Director:
+{%for directors in director%}
+{{directors.first_name}}
+{%endfor%}
+{%endfor%}
 {%endblock content %}
