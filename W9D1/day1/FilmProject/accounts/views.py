@@ -1,3 +1,5 @@
+from ast import Delete
+from datetime import date
 from multiprocessing import context
 from django.shortcuts import render
 
@@ -12,6 +14,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.models import User, Group
 from .forms import ProfileForm
 from .models import UserProfile
+from films.forms import AddFilmForm
 
 # Create your views here.
 
@@ -22,7 +25,7 @@ def signup(request):
         form_filled = UserCreationForm(request.POST)
         if form_filled.is_valid():
             
-            form_filled.save(commit = False)
+            form_filled.save()
 
             username = form_filled.cleaned_data.get('username')
             password = form_filled.cleaned_data.get('password1')
@@ -30,13 +33,13 @@ def signup(request):
             user = authenticate(username=username, password=password)
             
             #create profile here
-            UserProfile.objects.create(user_id = user.id)
+            # UserProfile.objects.create(user_id = user.id)
 
             
-            user = form_filled.save()
+            # user = form_filled.save()
 
-            regulars = Group.objects.get(name='Regulars')
-            regulars.user_set.add(user)
+            # regulars = Group.objects.get(name='Regulars')
+            # regulars.user_set.add(user)
 
             login(request, user)
             return redirect('homepage')
@@ -90,11 +93,23 @@ def profile_user(request):
     return render(request,"profile.html",context)
 
 def profile(request):
-    user = request.User
+    user = request.user
     profile = user.userprofile
     context = {'profile': profile}
 
     return render(request, 'profile.html', context)
 
+(lambda u:u.has_perm('films.can_delete_film'))
 
+def delete_film(request):
+    context = {'form': AddFilmForm (initial={'released_date': date.today})}
+    if request.method == 'POST':
+        form_filled = AddFilmForm(request.POST)
+        if form_filled.is_valid():
+            form_filled.delete()
+            return redirect ('homepage')
+        else:
+            print(form_filled.errors)
+
+    return render(request,'delete_film.html',context)
 

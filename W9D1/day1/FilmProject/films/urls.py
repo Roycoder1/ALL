@@ -1,6 +1,6 @@
 from django.urls import path,include
 
-from films.views import addDirector, addFilm, home, update_director, update_film, homepage
+from films.views import addDirector, addFilm, home, update_director, update_film
 
 urlpatterns = [
     path("homepage",home,name= 'homepage'),

@@ -1,0 +1,80 @@
+body{
+    background-color: beige;
+    text-align: center;
+    width: 99%;
+}
+img{
+    width: 600px;
+    height: 300px;
+}
+nav{
+    background-color: beige;
+}
+ul li{
+    list-style-type: none;
+    font-size: 2em;
+}
+.macron{
+    width: 600px;
+    height: 600px;
+
+}
+h2{
+    color: orangered;
+    font-size: 3em;
+}
+.navbar-brand {
+    color: orangered;
+}
+button a {
+    text-decoration: none;
+    color: green;
+    
+}
+button{
+    background-color: plum;
+}
+.fn{
+    height: 20px;
+    background-color: bisque;
+    color: aqua;
+}
+.ln{
+    height: 20px;
+    background-color: bisque;
+    color: blue;
+}
+.city{
+    height: 20px;
+    background-color: bisque;
+    color: brown;
+}
+.demand{
+    height: 20px;
+    background-color: bisque;
+    color: yellow;
+}
+.details{
+    
+    background-color: bisque;
+    color: pink;
+}
+
+.mail{
+    height: 20px;
+    background-color: bisque;
+    color: rgb(127, 15, 33);
+    margin-right: 130px;
+   
+
+}
+.phone{
+    height: 20px;
+    background-color: bisque;
+    color: rgb(193, 177, 30);
+    margin-right: 197px;
+}
+.dropdown-item{
+font-size: 0.5em;
+font-weight: bold;
+}

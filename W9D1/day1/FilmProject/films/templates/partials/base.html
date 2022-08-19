@@ -15,6 +15,9 @@
     
 {%include './navbar.html' %}
 <br>
+
+{%if user%}
+
 {% block content%}
 {% endblock content %}
 <br>
@@ -27,7 +30,7 @@
         </ul>
 
     </div>
-
+{%endif%}
 
 </footer>
 

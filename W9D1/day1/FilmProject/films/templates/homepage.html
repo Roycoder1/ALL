@@ -3,16 +3,29 @@
 
 <br>
 {%block content%}
+<h1>Welcome </h1>
+{%if user.is_authenticated%}
+    {%if user.is_superuser%}
+    {{"Welcome superuser"}}
+    {%else%}
+        {{"You are logged in "}}
+    {%endif%}
+{%endif%}
 {%for film in films%}
+
+<script>alert("welcome to the homepage")</script>
 <div>
 Title: {{film.title}}
 </div>
-{% for cat in film.cayegories.all%}
+{% for cat in film.categories.all%}
 {{cat}}
 {%endfor%}
-Director:
+<!-- Director: -->
 {%for directors in director%}
 {{directors.first_name}}
 {%endfor%}
 {%endfor%}
+{%if user.is_superuser%}
+<button type="submit"> <a href="{%url 'delete_film'%}">  Delete </a> </button>
+{%endif%}
 {%endblock content %}

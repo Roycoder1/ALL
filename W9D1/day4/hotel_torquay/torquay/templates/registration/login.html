@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+    <style>
+        body{
+            background-color: beige;
+        }
+    </style>
+    {%block content%}
+    {% if form.errors%}
+        <p>There errors in the form</p>
+    {% endif %}
+    {% if next %}
+    <p>Hey you cant acces to this page</p>
+    {% endif%}
+    <form method="POST" >
+        {% csrf_token %}
+        Login <br>
+
+        {{form.username}}
+        {{form.password}}
+        <input type="submit" value="Login" >
+        <input type="hidden" name="next" value="{{next}}">
+    </form>
+    {%endblock%}

@@ -1,0 +1,14 @@
+{% extends 'base.html'%}
+
+{%block content%}
+{%for infos in info %}
+<img src="{{infos.images}}" alt="hotel le touquet"> <br>
+{{infos.description}} <br>
+{{infos.area}} <br>
+{%endfor%}
+<h2>In the area</h2> 
+<ul>
+    <li>Casino </li><img src="https://www.casinosbarriere.com/content/dam/casinos/sites_locaux/le-touquet/home/big/big_le-touquet_desktop.jpg" >
+    <li>Beach </li><img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/d0/f0/12/dsc-1625-largejpg.jpg?w=1200&h=-1&s=1" alt="Beach">
+    <li>Macron </li><img  class = "macron" src="https://www.elysee.fr/cdn-cgi/image/width=760,height=1145/images/default/0001/13/22e85bb25185f2f19748178a2f46713c11a32913.jpg" alt="Macron">
+{%endblock content%}

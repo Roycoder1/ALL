@@ -1,5 +1,6 @@
 from django.urls import path
 from .views import (
+    delete_film,
     profile,
     profile_user,
     signup, 
@@ -14,4 +15,5 @@ urlpatterns = [
     path("update-profile", update_profile, name="update"),
     path("profile_user",profile_user, name='profile_user'),
     path("user-profile",profile, name='profile'),
+    path("delete", delete_film, name="delete")
 ]
