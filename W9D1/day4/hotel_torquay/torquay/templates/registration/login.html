@@ -1,4 +1,6 @@
 {% extends 'base.html'%}
+{% load crispy_forms_tags%}
+{% load crispy_forms_filters %}
 
     <style>
         body{
@@ -15,9 +17,8 @@
     <form method="POST" >
         {% csrf_token %}
         Login <br>
-
-        {{form.username}}
-        {{form.password}}
+        {{form|crispy}}
+        
         <input type="submit" value="Login" >
         <input type="hidden" name="next" value="{{next}}">
     </form>

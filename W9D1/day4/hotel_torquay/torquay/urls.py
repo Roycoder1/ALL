@@ -7,4 +7,5 @@ urlpatterns = [
     path("",display_info,name="homepage"),
     path("date", vacancies , name = 'date'),
     path("info", more_info , name = 'info'),
+    
 ]
